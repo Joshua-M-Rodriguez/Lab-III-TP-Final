@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+
+    <link rel="icon" href="pot of greed.png">
+
+    <link rel="stylesheet" href="../style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-..." crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-..." crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="productsBodyContainer">
+
+        <div class="categories">
+            <button onclick="filterImplants([[0, 1], [2, 49]])">IMPLANTS</button>
+            <button onclick="filterImplants([[0, 1], [50, 79]])">WEAPONS</button>
+            <button onclick="filterImplants([[0, 1], [79, 97]])">ORGANS</button>
+            <button onclick="filterImplants([[0, 1], [2, 100]])">ALL</button>
+        </div>
+
+        <table class="productsTable" id="implants">
+
+            <tr class="implantTitles">
+                <td id="thumbnailTd">IMG</td>
+                <td>IMPLANT</td>
+                <td>ARG $</td>
+                <td>U$S</td>
+                <td>DATE</td>
+                <td style="font-size: 20px;">MOD</td>
+                <td style="font-size: 20px;">DEL</td>
+            </tr>
+            <tr class="marqueesTr">
+                <td>IMG</td>
+                <td>
+                    <marquee class="implantMarquee" direction="left" scrollamount="10" behavior="scroll">
+                        <p>IMPLANTE / IMPLANTAT / IMPLANT / IMPIANTO / インプラント / 植入物 / การปลูกถ่าย / एक प्रत्यारोपण</p>
+                    </marquee>
+                </td>
+                <td>
+                    <marquee class="implantMarquee" direction="left" scrollamount="10" behavior="scroll">
+                        <p>$ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $
+                        </p>
+                    </marquee>
+                </td>
+                <td>
+                    <marquee class="implantMarquee" direction="left" scrollamount="10" behavior="scroll">
+                        <p>$ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $ $
+                        </p>
+                    </marquee>
+                </td>
+                <td>
+                    <marquee class="implantMarquee" direction="left" scrollamount="10" behavior="scroll">
+                        <p>FECHA / DATUM / DATE / DATA / 日付 / 日期 / วันที่ / तारीख</p>
+                    </marquee>
+                </td>
+            </tr>
+
+            <tbody id="returnImplants"></tbody>
+
+            <audio id="laughter" src="laugh.wav"></audio>
+
+        </table>
+
+        <div class="pot-manager">
+
+            <div id="implant-form">
+                <h1>ADD PRODUCT</h1>
+
+                <label for="">NAME</label>
+                <br>
+                <input type="text" id="implant">
+                <br><br>
+
+                <label for="">ARG $ PRICE</label>
+                <br>
+                <input type="text" id="arg">
+                <br><br>
+
+                <label for="">U$D PRICE</label>
+                <br>
+                <input type="text" id="usd">
+                <br><br>
+
+                <label for="">DATE</label>
+                <br>
+                <input type="date" id="date">
+                <br><br>
+
+                <button onclick="addImplant()" id="save-implant">ADD <i class="fa-solid fa-floppy-disk"></i></button>
+                <br><br>
+
+                <audio id="eatingSound" src="eating.m4a"></audio>
+
+            </div>
+
+            <div id="mod-form">
+                <h1>EDIT PRODUCT</h1>
+
+                <label for="">ID</label>
+                <br>
+                <input type="text" id="idMod">
+                <br><br>
+
+                <label for="">NAME</label>
+                <br>
+                <input type="text" id="implantMod">
+                <br><br>
+
+                <label for="">ARG $ PRICE</label>
+                <br>
+                <input type="text" id="argMod">
+                <br><br>
+
+                <label for="">U$D PRICE</label>
+                <br>
+                <input type="text" id="usdMod">
+                <br><br>
+
+                <label for="">DATE</label>
+                <br>
+                <input type="date" id="dateMod">
+                <br><br>
+
+                <button onclick="editImplant()" id="save-implant">SAVE <i class="fa-solid fa-floppy-disk"></i></button>
+                <br><br>
+
+            </div>
+
+            <div id="pot-options">
+                <button id="pot-button" onclick="showAdd()"><i class="fa-solid fa-plus"></i></button>
+                <div class="alphabet">
+                    <button id="pot-button" onclick="sort(1, true)"><i
+                            class="fa-solid fa-arrow-down-a-z"></i></i></button>
+                    <button id="pot-button" onclick="sort(1, false)"><i class="fa-solid fa-arrow-down-z-a"></i></button>
+                </div>
+                <button id="pot-button" onclick="clearProducts()"><i class="fa-solid fa-trash"></i></button>
+            </div>
+            <img src="pot of greed.png" alt="">
+            <div class="pot-menu">
+                <button onclick="pot_menu()" id="pot-open">OPEN</button>
+                <button onclick="pot_menu()" id="pot-close">CLOSE</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../productos/script.js">
+
+    </script>
+
+</body>
+
+</html>
