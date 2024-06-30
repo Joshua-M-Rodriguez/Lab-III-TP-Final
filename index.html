@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>मेरा वेबपेज / หน้าเว็บของฉัน</title>
+
+    <link rel="icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Yin_yang.svg/1024px-Yin_yang.svg.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Jersey+25&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.cdnfonts.com/css/vcr-osd-mono" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-..." crossorigin="anonymous">
+
+    <link href="https://fonts.cdnfonts.com/css/biergarten?styles=9680" rel="stylesheet">
+
+
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+
+    <div class="audio-knob-container">
+
+    </div>
+
+    <div class="changing-color">
+        <img id="megaSatan" src="brimstone green.gif" style="display: none;">
+
+        <audio src="audios/audios/brimstone sfx.wav" id="brimstoneSfx"></audio>
+    </div>
+
+    <!--Banner-->
+
+
+
+    <div class="header">
+
+        <div class="logo1">
+            <img id="logo" src="logo green.png">
+        </div>
+
+        <div class="options-container">
+
+            <div class="page-options">
+                <div class="themes-option" id="option">
+                    <img src="demon1.gif">
+                    <button onclick="showThemes()">TEMAS</button>
+                </div>
+                <div class="themes-option" id="option" onclick="mutePage()">
+                    <img src="demon2.gif">
+                    <button>MUTE</button>
+                </div>
+                <div class="themes-option" id="option">
+                    <img src="demon3.gif">
+                    <button>
+                        <a href="productos/index.html" target="_blank">
+                            TIENDA
+                        </a>
+                    </button>
+                </div>
+            </div>
+
+            <!--MENÚ DE TEMAS-->
+
+            <div class="themes-menu">
+                <div class="theme">
+                    <button class="cruelty" id="themeButton" onclick="changeImage()">CRUELTY</button>
+                    <img class="cruelty-ico" src="mt foxtrot.png">
+                </div>
+                <div class="theme">
+                    <button class="newells" id="themeButton" onclick="changeImage()">NEWELLS</button>
+                    <img class="newells-ico" src="newells symbol.png">
+                </div>
+                <div class="theme">
+                    <button class="seapunk" id="themeButton" onclick="changeImage()">seapunk</button>
+                    <img class="seapunk-ico" src="dolphins.png">
+                </div>
+                <div class="theme">
+                    <button class="duality" id="themeButton" onclick="changeImage()">DUALITY</button>
+                    <img class="duality-ico" src="duality.png">
+                </div>
+            </div>
+
+        </div>
+
+        <!--Caja de búsqueda-->
+
+        <div class="searchbox">
+            <input type="text" id="input-field" placeholder="Escribe algo...">
+            <button class="search"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+
+        <div class="tipping" id="mensaje" style="display: none;">
+            <img src="https://media1.tenor.com/m/qCxYWwmISjMAAAAd/lain-serial-experiments-lain.gif">
+        </div>
+
+        <div class="cibo">
+            <img src="cibogif.gif">
+            <div class="cibo-footer">
+                <a href="https://ebaia.neocities.org/" target="_blank">
+                    <p>
+                        JOIN NOW
+                    </p>
+                </a>
+            </div>
+        </div>
+
+        <div class="haruhi">
+            <img src="haruhi.gif">
+        </div>
+
+    </div>
+
+    <!--Texto scroll-->
+
+    <div class="text-loop">
+        <div class="scroll">
+            <marquee class="btd" direction="left" scrollamount="50" behavior="scroll">
+                <p>RN TO DIE / WORLD IS A FUCK / 鬼神 Kill Em All 1989 / I am trash man / 410,757,864,530 DEAD COPS</p>
+            </marquee>
+        </div>
+    </div>
+
+
+
+
+    <div class="page-nav">
+        <div class="themes-option" id="option">
+            <img src="demon1.gif">
+            <button onclick="showThemes()">TEMAS</button>
+        </div>
+        <div class="themes-option" id="option">
+            <img src="demon2.gif">
+            <button onclick="mutePage()">MUTE</button>
+        </div>
+        <div class="themes-option" id="option">
+            <img src="demon3.gif">
+            <button>
+                <a href="productos/index.html" target="_blank">
+                    PRODUCTOS
+                </a>
+            </button>
+        </div>
+    </div>
+
+
+    <!--GOD'S MOUTH-->
+
+    <div id="gods-mouth" class="draggableDiv">
+        <div class="gm-nav">
+            <div class="gm-title">
+                <marquee direction="left" scrollamount="15" behavior="scroll" id="gm-marquees">
+                    <p>
+                        AT ITS HEAD THERE RODE A TALL AND EVIL SHAPE, MOUNTED UPON
+                        A BLACK HORSE, IF HORSE IT WAS; FOR IT WAS HUGE AND HIDEOUS,
+                        AND ITS FACE WAS A FRIGHTFUL MASK, MORE LIKE A SKULL THAN A
+                        LIVING HEAD, AND IN THE SOCKETS OF ITS EYES AND IN ITS NOSTRILS
+                        THERE BURNED A FLAME. THE RIDER WAS ROBED ALL IN BLACK, AND
+                        BLACK WAS HIS LOFTY HELM; YET THIS WAS NO RINGWRAITH BUT A
+                        LIVING MAN. THE LIEUTENANT OF THE TOWER OF BARAD-DÛR HE
+                        WAS, AND HIS NAME IS REMEMBERED IN NO TALE; FOR HE HIMSELF
+                        HAD FORGOTTEN IT.
+                    </p>
+                </marquee>
+
+            </div>
+            <button class="gm-sound" onclick="toggleSound()"><i class="fa-solid fa-volume-high"
+                    id="gmMute"></i></button>
+            <button class="gm-close" onclick="gmClose()"><i class="fa-solid fa-x"></i></i></button>
+        </div>
+        <div class="gm-talk">
+            <img src="saurons-mouth-still.png" id="gmPic">
+            <button id="gm-talk-order" onclick="startDialog();">T A L K</button>
+            <audio src="audios/talking1.mp3" id="gmVoice"></audio>
+        </div>
+        <div class="gm-box">
+            <marquee class="gm-marquee" id="gm-marquees" direction="left" scrollamount="30" behavior="scroll">THIS IS
+                WISDOM FROM THE KEEPER OF THE TREES J.R.R. TOLKIEN</marquee>
+            <p style="color: white; font-size: 15px;">✧･ﾟ: *✧･ﾟ:*</p>
+            <div id="gmText">
+                <p>...</p>
+            </div>
+            <p style="color: white; font-size: 15px;">✧･ﾟ: *✧･ﾟ:*</p>
+            <marquee class="gm-marquee" id="gm-marquees" direction="right" scrollamount="30" behavior="scroll">THIS IS
+                WISDOM FROM THE KEEPER OF THE TREES J.R.R. TOLKIEN</marquee>
+        </div>
+        <div class="gm-footer" id="dragPoint">
+        </div>
+    </div>
+
+    <!--GRIMOIRE OF MARISA-->
+
+    <div id="grimoire-of-marisa">
+        <audio src="audios/grimoire music.mp3" id="grimoireMusic"></audio>
+        <div id="grimoire-options">
+            <button onclick="grimoireMusicVol()" id="grimoireMusicVol"><img src="grimoire-music-on.png"
+                    id="grimoireMusicSymbol"></button>
+            <button onclick="hideGrimoire()" id="hideGrimoire"><img src="hide-grimoire.png"></button>
+        </div>
+        <div id="grimoire-body">
+            <div id="grimoire-pages">
+                <audio src="audios/pageSfx.mp3" id="pageSfx"></audio>
+                <audio src="audios/hl error.mp3" id="hlError"></audio>
+                <div id="grimoire-left">
+                    <img src="page0.png" class="grimoire-page-left">
+                </div>
+                <div id="grimoire-right">
+                    <img src="page1.png" class="grimoire-page-right">
+                </div>
+            </div>
+        </div>
+        <div id="grimoire-navigation">
+            <button onclick="previousPage()" id="previousPage"><img src="previous-page.png"></button>
+            <button onclick="grimoireClose()" id="openGrimoire"><img src="open-grimoire.png"></button>
+            <button onclick="grimoireClose()" id="closeGrimoire"><img src="close-grimoire.png"></button>
+            <button onclick="nextPage()" id="nextPage"><img src="next-page.png"></button>
+        </div>
+
+    </div>
+
+
+    <!--CUERPO-->
+
+    <div class="body-container">
+
+        <!--LADO IZQUIERDO-->
+
+        <div class="left-side">
+
+            <!--Fecha y hora-->
+
+            <div class="date-time-box">
+                <p>TODAY IS</p>
+                <p id="dateTime"></p>
+                <img src="" id="dayPic">
+            </div>
+
+            <div class="ride">
+
+                <div class="greetings">
+                    <button class="greet" onclick="mostrarHallo()">Saludar</button>
+                    <button id="Byebye" class="greet" onclick="mostrarByebye()">Despedirse</button>
+                </div>
+
+                <!--Gif de despedida-->
+
+                <div id="divBye" style="display:none;">
+                    <img src="osakabyebye.gif" width="350px">
+                </div>
+
+                <div id="divHi" style="display:none;">
+                    <img src="osakahallo.gif" width="350px">
+                </div>
+
+                <audio id="audioHi" src="audios/hallo.wav"></audio>
+                <audio id="audioBye" src="audios/bye bye.wav"></audio>
+
+                <!--MC Ride-->
+                <div class="ride-container">
+                    <div class="ride-gif">
+                        <img src="mcride.gif">
+                    </div>
+                    <div id="ride-talk">
+                        <img src="mouth.gif">
+                    </div>
+                </div>
+            </div>
+
+            <!--Masks-->
+            <div class="masks-container">
+
+                <audio src="audios/souka.wav" id="soukaSfx"></audio>
+
+                <div class="masks-banner">
+                    <p>PICK YOUR AVATAR</p>
+                </div>
+                <div class="masks">
+                    <div class="mask" data-tooltip="Richard">
+
+                        <a href="https://en.wikipedia.org/wiki/Chicken" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/f/f1/Untitled-3.png/revision/latest/scale-to-width-down/350?cb=20150310222805">
+                        </a>
+
+                    </div>
+
+                    <div class="mask" data-tooltip="Rasmus">
+
+                        <a href="https://en.wikipedia.org/wiki/Owl" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/b/b5/Rasmus.png/revision/latest/scale-to-width-down/350?cb=20150311041030">
+                        </a>
+                    </div>
+
+                    <div class="mask" data-tooltip="Tony">
+                        <a href="https://en.wikipedia.org/wiki/Tiger" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/9/9a/Tony.png/revision/latest/scale-to-width-down/350?cb=20150311040943">
+                        </a>
+                    </div>
+                    <div class="mask" data-tooltip="Aubrey">
+                        <a href="https://en.wikipedia.org/wiki/Pig" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/a/a3/Untitled-7.png/revision/latest/scale-to-width-down/350?cb=20150310223858">
+                        </a>
+                    </div>
+                    <div class="mask" data-tooltip="Don Juan">
+                        <a href="https://en.wikipedia.org/wiki/Horse" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/4/4f/Untitled-9.png/revision/latest/scale-to-width-down/350?cb=20150310224613">
+                        </a>
+                    </div>
+                    <div class="mask" data-tooltip="Graham">
+                        <a href="https://en.wikipedia.org/wiki/Rabbit" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/8/8e/Graham.png/revision/latest/scale-to-width-down/350?cb=20150311042604">
+                        </a>
+                    </div>
+                    <div class="mask" data-tooltip="Dennis">
+                        <a href="https://en.wikipedia.org/wiki/Wolf" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/b/bd/Dennis.png/revision/latest/scale-to-width-down/350?cb=20150311042539">
+                        </a>
+                    </div>
+                    <br />
+                    <div class="mask" data-tooltip="George">
+                        <a href="https://en.wikipedia.org/wiki/Giraffe" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/8/82/Untitled-10.png/revision/latest/scale-to-width-down/350?cb=20150310224737">
+                        </a>
+                    </div>
+                    <div class="mask" data-tooltip="Ted">
+                        <a href="https://en.wikipedia.org/wiki/Dog" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/b/b7/Ted.png/revision/latest/scale-to-width-down/350?cb=20150311042724">
+                        </a>
+                    </div>
+                    <div class="mask" data-tooltip="Rufus">
+                        <a href="https://en.wikipedia.org/wiki/Elephant" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/f/fc/Rufus.png/revision/latest/scale-to-width-down/350?cb=20150311041604">
+                        </a>
+                    </div>
+                    <div class="mask" data-tooltip="Rami">
+                        <a href="https://en.wikipedia.org/wiki/Camel" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/0/08/Rami.png/revision/latest/scale-to-width-down/350?cb=20150311042733">
+                        </a>
+                    </div>
+                    <div class="mask" data-tooltip="Willem">
+                        <a href="https://en.wikipedia.org/wiki/Chimpanzee" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/f/f9/Willem.png/revision/latest/scale-to-width-down/350?cb=20150311042754">
+                        </a>
+                    </div>
+                    <div class="mask" data-tooltip="Peter">
+                        <a href="https://en.wikipedia.org/wiki/Unicorn" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/9/91/Peter.png/revision/latest/scale-to-width-down/350?cb=20150311042639">
+                        </a>
+                    </div>
+                    <div class="mask" data-tooltip="Zack">
+                        <a href="https://en.wikipedia.org/wiki/Frog" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/e/e1/Zack.png/revision/latest/scale-to-width-down/350?cb=20150311041107">
+                        </a>
+                    </div>
+                    <div class="mask" data-tooltip="Oscar">
+                        <a href="https://en.wikipedia.org/wiki/Mole_(animal)" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/6/68/Oscar.png/revision/latest/scale-to-width-down/350?cb=20150311042645">
+                        </a>
+                    </div>
+                    <div class="mask" data-tooltip="Rick">
+                        <a href="https://en.wikipedia.org/wiki/Fox" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/d/dd/Rick.png/revision/latest/scale-to-width-down/350?cb=20150311042727">
+                        </a>
+                    </div>
+                    <div class="mask" data-tooltip="Brandon">
+                        <a href="https://en.wikipedia.org/wiki/Panther" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/d/dd/Brandon.png/revision/latest/scale-to-width-down/350?cb=20150311041303">
+                        </a>
+                    </div>
+                    <div class="mask" data-tooltip="Charlie">
+                        <a href="https://en.wikipedia.org/wiki/Octopus" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/c/c9/Charlie.png/revision/latest/scale-to-width-down/350?cb=20150311041645">
+                        </a>
+                    </div>
+                    <div class="mask" data-tooltip="Louie">
+                        <a href="https://en.wikipedia.org/wiki/Chameleon" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/f/f3/Louie.png/revision/latest/scale-to-width-down/350?cb=20150311042618">
+                        </a>
+                    </div>
+                    <div class="mask" data-tooltip="Phil">
+                        <a href="https://en.wikipedia.org/wiki/Carp" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/2/21/Phil.png/revision/latest/scale-to-width-down/350?cb=20150311042739">
+                        </a>
+                    </div>
+                    <div class="mask" data-tooltip="Nigel">
+                        <a href="https://en.wikipedia.org/wiki/Bat" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/7/7f/Nigel.png/revision/latest/scale-to-width-down/350?cb=20150311042659">
+                        </a>
+                    </div>
+                    <div class="mask" data-tooltip="Earl">
+                        <a href="https://en.wikipedia.org/wiki/Walrus" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/f/f5/Earl.png/revision/latest/scale-to-width-down/350?cb=20150311042548">
+                        </a>
+                    </div>
+                    <div class="mask" data-tooltip="Jones">
+                        <a href="https://en.wikipedia.org/wiki/Alligator" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/b/b7/Jones.png/revision/latest/scale-to-width-down/350?cb=20150311042612">
+                        </a>
+                    </div>
+                    <div class="mask" data-tooltip="Carl">
+                        <a href="https://en.wikipedia.org/wiki/Locust" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/7/71/Carl.png/revision/latest/scale-to-width-down/350?cb=20150311042532">
+                        </a>
+                    </div>
+                    <div class="mask" data-tooltip="Jake">
+                        <a href="https://en.wikipedia.org/wiki/Cobra" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/6/6b/Untitled-8.png/revision/latest/scale-to-width-down/350?cb=20150310224404">
+                        </a>
+                    </div>
+                    <div class="mask" data-tooltip="Richter">
+                        <a href="https://en.wikipedia.org/wiki/Rat" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/8/88/Untitled-11.png/revision/latest/scale-to-width-down/350?cb=20150310224903">
+                        </a>
+                    </div>
+                    <div class="mask" data-tooltip="Rusell">
+                        <a href="https://en.wikipedia.org/wiki/Bull" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/d/d2/RusselTransparent.png/revision/latest/scale-to-width-down/350?cb=20170318195419">
+                        </a>
+                    </div>
+                    <div class="mask" data-tooltip="Corey">
+                        <a href="https://en.wikipedia.org/wiki/Zebra" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/5/52/Corey.png/revision/latest/scale-to-width-down/350?cb=20150320223204">
+                        </a>
+                    </div>
+                    <div class="mask" data-tooltip="Tony">
+                        <a href="https://en.wikipedia.org/wiki/Tiger" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/d/dc/Untitled-2.png/revision/latest/scale-to-width-down/350?cb=20150320222759">
+                        </a>
+                    </div>
+                    <div class="mask" data-tooltip="Alex">
+                        <a href="https://en.wikipedia.org/wiki/Swan" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/9/9e/AlexDavis.png/revision/latest/scale-to-width-down/350?cb=20150413005238">
+                        </a>
+                    </div>
+                    <div class="mask" data-tooltip="Ash">
+                        <a href="https://en.wikipedia.org/wiki/Swan" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/8/81/AshDavis.png/revision/latest/scale-to-width-down/350?cb=20150413005257">
+                        </a>
+                    </div>
+                    <div class="mask" data-tooltip="Mark">
+                        <a href="https://en.wikipedia.org/wiki/Bear" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/4/4d/Mark.png/revision/latest/scale-to-width-down/350?cb=20150320215849">
+                        </a>
+                    </div>
+                    <div class="mask" data-tooltip="Irvin">
+                        <a href="https://en.wikipedia.org/wiki/Viper" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/b/b2/Irvin.png/revision/latest/scale-to-width-down/350?cb=20150321032238">
+                        </a>
+                    </div>
+                    <div class="mask" data-tooltip="Dallas">
+                        <a href="https://en.wikipedia.org/wiki/Black_Mamba" target="_blank">
+                            <img
+                                src="https://static.wikia.nocookie.net/hotline-miami/images/c/c9/Dallas.png/revision/latest/scale-to-width-down/350?cb=20150321032248">
+                        </a>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <!--CENTRO-->
+
+        <div class="center">
+
+            <div class="center-row-1">
+                <div class="shell">
+                    <div class="shell-box">
+                        <div class="shell-left">
+                            <div class="shell-left-display"></div>
+                            <div id="shell-left-content">
+                                <img src="sigil1.png" class="leftSigil">
+                                <img src="sigil2.png" class="leftSigil">
+                                <img src="sigil3.png" class="leftSigil">
+                                <img src="sigil4.png" class="leftSigil">
+                                <img src="sigil5.png" class="leftSigil">
+
+                                <audio src="audios/hoverSfx1.wav" id="hoverSfx1"></audio>
+                            </div>
+                        </div>
+                        <div class="shell-right">
+                            <div id="shell-right-content">
+                                <img src="sigil1.png" class="rightSigil">
+                                <img src="sigil2.png" class="rightSigil">
+                                <img src="sigil3.png" class="rightSigil">
+                                <img src="sigil4.png" class="rightSigil">
+                                <img src="sigil5.png" class="rightSigil">
+                            </div>
+                            <div class="shell-right-display"></div>
+                        </div>
+                    </div>
+                    <img src="https://giffiles.alphacoders.com/215/215466.gif">
+                    <div class="shell-overlay"></div>
+                    <div class="footer2">
+                        <p>攻壳机动队</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center-row-2">
+                <div class="run-over-glowies">
+                    <div class="glowie-pic">
+                        <p>DEATH TO ALL CIA AGENTS</p>
+                        <p>RUN THEM OVER<br />WITH YOUR CAR</p>
+                    </div>
+                    <div class="glowie-footer">
+                        <a href="https://drive.google.com/file/d/0ByT0AzxAjXs3cWlYWnZiSHRjVlk/view?resourcekey=0-BCJc7UKPsFtdFdbKKmPkZg"
+                            target="_blank">
+                            <p>THEY GLOW IN THE DARK!<br />LEARN MORE</p>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <div class="temple-os">
+                    <div class="temple-gif">
+                        <div class="temple-banner-footer">
+                            <p>✟ TEMPLE OS ✟</p>
+                        </div>
+                        <img src="templeos.gif">
+                        <div class="temple-banner-footer">
+                            <a href="https://templeos.org/" target="_blank">
+                                <p>DOWNLOAD NOW!</p>
+                            </a>
+                            <p>✟ GOD IS ONLINE ✟</p>
+                        </div>
+                    </div>
+                    <marquee class="bible-verse-1" direction="left" scrollamount="15" behavior="scroll">
+                        <p>JOHN 3:16 - FOR GOD SO LOVED THE WORLD THAT HE GAVE HIS ONLY BEGOTTEN SON</p>
+                    </marquee>
+                </div>
+
+                <div class="rip-terry">
+                    <div class="terry-cross">
+                        <div class="terry">
+                            <img src="terry.jpg">
+                        </div>
+                        <div class="cross">
+                            <img src="crosses1.gif">
+                        </div>
+                    </div>
+                    <div class="terry-footers">
+                        <div class="terry-footer">
+                            <p>YOU GOTTA KEEP<br />YOUR HEAD UP</p>
+                        </div>
+                        <div class="cross-footer">
+                            <p>R.I.P. TERRY DAVIS<br>1969-2018</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!--LADO DERECHO-->
+
+        <div class="right-side">
+
+            <!--Playlists-->
+
+            <div class="playlist-container">
+                <div class="playlist-main">
+
+                    <div class="eye1">
+                        <img src="eye2.gif" id="eye1" src="imagen1.jpg" alt="Imagen 1" data-num="1"
+                            onclick="mostrarPlaylist(this)">
+                        <img src="eye1.gif" id="eye2" src="imagen2.jpg" alt="Imagen 2" data-num="2">
+                        <img src="eye3.gif" id="eye3" src="imagen3.jpg" alt="Imagen 3" data-num="3">
+                        <img src="eye4.gif" id="eye4" src="imagen4.jpg" alt="Imagen 4" data-num="4">
+                        <img src="eye5.gif" id="eye5" src="imagen5.jpg" alt="Imagen 5" data-num="5">
+                        <img src="eye6.gif" id="eye6" src="imagen6.jpg" alt="Imagen 6" data-num="6">
+                    </div>
+                    <div class="playlist-box">
+                        <iframe id="playlist1" class="playlist" style="display: block;" data-num="1"
+                            style="border-radius:12px"
+                            src="https://open.spotify.com/embed/playlist/6FQubfZD8RbHv86AMAGwZf?utm_source=generator"
+                            width="100%" height="600" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                        <iframe id="playlist2" class="playlist" style="display: none;" data-num="2"
+                            style="border-radius:12px"
+                            src="https://open.spotify.com/embed/playlist/2Vqg6gK61io9Ss0sw14Dzp?utm_source=generator"
+                            width="100%" height="600" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                        <iframe id="playlist3" class="playlist" style="display: none;" data-num="3"
+                            style="border-radius:12px"
+                            src="https://open.spotify.com/embed/playlist/2jh7n1bv13TbaSQB7Z8xUZ?utm_source=generator"
+                            width="100%" height="600" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                        <iframe id="playlist4" class="playlist" style="display: none;" data-num="4"
+                            style="border-radius:12px"
+                            src="https://open.spotify.com/embed/playlist/4bfj9Go9YnSq7L4YeWTWeY?utm_source=generator"
+                            width="100%" height="600" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                        <iframe id="playlist5" class="playlist" style="display: none;" data-num="5"
+                            style="border-radius:12px"
+                            src="https://open.spotify.com/embed/playlist/2PUdNbjXpTxBZee4fG7s23?utm_source=generator"
+                            width="100%" height="600" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                        <iframe id="playlist6" class="playlist" style="display: none;" data-num="6"
+                            style="border-radius:12px"
+                            src="https://open.spotify.com/embed/playlist/3ea1BoK7tCdDjp9bkkxX92?utm_source=generator"
+                            width="100%" height="600" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="lazy"></iframe>
+                        <div class="loading-playlist">
+                            <p>
+                                L O A D I N G...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="playlist-footer">
+                        <img src="flesh2.gif">
+                        <img src="flesh2.gif">
+                        <img src="flesh2.gif">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="call-grimoire" id="grimoireDisplay">
+                <img src="ball.gif">
+                <span>GRIMOIRE OF MARISA</span>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+        <img src="forklift.gif" class="forklift">
+        <p>
+            BECOME FORKLIFT CERTIFIED NOW!!!<br>
+            SAFETY FIRST<br>
+            0800-6161811 CALL NOW!!!!!!!
+        </p>
+    </div>
+
+    <!--Oscurecer fondo-->
+
+    <div id="overlay"></div>
+    <!--Gif de bienvenida-->
+
+    <script src="scripts/main.js">
+
+    </script>
+
+
+</body>
+
+</html>
